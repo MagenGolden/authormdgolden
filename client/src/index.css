@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Geo:ital@0;1&family=Orbitron:wght@400..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-color: black;
+}
+
+* {
+  margin-inline: auto;
+  padding: 0;
+  font-family: Orbitron;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: Geo;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-family: Atomic Age;
+  font-size: 2rem;
+}
+
+nav a {
+  color: inhert;
+  text-decoration: none;
+  cursor: pointer;
+
+  &.active {
+    color: #7fff00;
+    border: 2px solid #7fff00;
+  }
+}
+
+input {
+  color: black;
+  text-shadow: none;
+}
