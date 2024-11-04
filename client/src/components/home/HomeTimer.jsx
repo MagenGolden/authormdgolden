@@ -29,11 +29,11 @@ useEffect(() => {
       <h1 className='text-green'>THE INVASION</h1>
       <p className='text-orange'>Book 3 of 4</p>
       <p className='text-blue'>release countdown</p>
-      <div className='mt-10 flex items-center justify-evenly'>
-        <div className='w-full flex justify-evenly text-green text-2xl'>{timeLeft.days}<p className='text-orange'>Days</p></div>
-        <div className='w-full flex justify-evenly text-green text-2xl'>{timeLeft.hours}<p className='text-orange'>Hours</p></div>
-        <div className='w-full flex justify-evenly text-green text-2xl'>{timeLeft.minutes}<p className='text-orange'>Minutes</p></div>
-        <div className='w-full flex justify-evenly text-green text-2xl'>{timeLeft.seconds}<p className='text-orange'>Seconds</p></div>
+      <div className='mt-10 flex flex-wrap items-center justify-evenly'>
+        <div className='w-64 flex justify-evenly text-green text-2xl'>{timeLeft.days}<p className='text-orange'>Days</p></div>
+        <div className='w-64 flex justify-evenly text-green text-2xl'>{timeLeft.hours}<p className='text-orange'>Hours</p></div>
+        <div className='w-64 flex justify-evenly text-green text-2xl'>{timeLeft.minutes}<p className='text-orange'>Minutes</p></div>
+        <div className='w-64 flex justify-evenly text-green text-2xl'>{timeLeft.seconds}<p className='text-orange'>Seconds</p></div>
       </div>
     </section>
   );

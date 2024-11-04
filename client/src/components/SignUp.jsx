@@ -11,14 +11,14 @@ const [email, setEmail] = useState ('');
   return (
     <section id='signUp' className='mt-10'>
       <div className='bg-gradient-to-b from-black via-transparent to-transparent'>
-        <img className='relative -z-10 w-full object-cover' src={FormBg} alt="" />
+        <img className='relative -z-10 tablet:h-[455px] h-[500px] w-full object-cover' src={FormBg} alt="" />
       </div>
-      <div className='flex items-center -mt-[600px]'>
-        <img className='w-1/2' src={FormBk} alt="" />
-        <div className='w-1/2'>
+      <div className='tablet:flex items-center -mt-[480px] tablet:-mt-[400px]'>
+        <img className='w-[350px] tablet:w-1/2' src={FormBk} alt="" />
+        <div className='w-[350px] tablet:w-1/2'>
           <p className='text-blue text-md'>JOIN THE FIGHT</p>
           <p className='text-green text-xl'>THE REMEMBERERS</p>
-          <p className='px-20 text-sm font-medium'>Sign-up to get updates on when the next book on the series will be released. As an added bonus you will get the first chapter of book 2 absolutely free!</p>
+          <p className='w-4/5 m-auto text-sm font-medium'>Sign-up to get updates on when the next book on the series will be released. As an added bonus you will get the first chapter of book 2 absolutely free!</p>
           <form className='mt-2'>
             <input className='border-2 border-blue text-black' type="text" placeholder='First Name' value={name} size='10'
                    onChange={ (e) => setName(e.target.value) }/>

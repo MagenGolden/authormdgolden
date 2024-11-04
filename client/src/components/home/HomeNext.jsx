@@ -4,12 +4,12 @@ import NextBk2 from '../../assets/book2.png'
 const HomeNext = () => {
 
   return (
-    <section className='flex items-center mt-20'>
-      <img className='w-1/2' src={NextBk2} alt="" />
-      <div className='flex-row w-1/2'>
-        <p className='text-left text-3xl pb-1'>THE REBELLION</p>
-        <p className='text-left pb-4'>WOULD YOU GIVE UP EVERYTHING FOR FREEDOM?</p>
-        <p className='text-left text-sm pr-40 pb-10 leading-relaxed'>Ed’s neighbors start going missing, but no one else seems to notice. When the house next to his goes under construction and his best friend doesn’t remember the family that lived there before, Ed decides to find the culprit for his friend’s sudden amnesia.
+    <section className='flex flex-wrap items-center mt-20'>
+      <img className='w-[600px]' src={NextBk2} alt="" />
+      <div className='flex-row w-[600px]'>
+        <p className='center:text-left text-3xl pb-1'>THE REBELLION</p>
+        <p className='center:text-left pb-4'>WOULD YOU GIVE UP EVERYTHING FOR FREEDOM?</p>
+        <p className='center:text-left text-sm center:pr-40 pb-10 leading-relaxed'>Ed’s neighbors start going missing, but no one else seems to notice. When the house next to his goes under construction and his best friend doesn’t remember the family that lived there before, Ed decides to find the culprit for his friend’s sudden amnesia.
           <br /> <br />
           The radio is brainwashing people into forgetting their loved ones, and those who remember are in danger. Ed must risk it all to save his friends and family. He enlist the help of his best friend and devises a plan to save those that are being targeted.
           <br /> <br />

@@ -6,6 +6,10 @@ export default {
             "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
     extend: {
+      screens: {
+        'tablet': '880px',
+        'center': '1200px',
+      },
       colors: {
         'blue': '#00ffff',
         'green': '#7fff00',

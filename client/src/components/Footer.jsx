@@ -17,15 +17,15 @@ const Footer = () => {
   ];
 
   return (
-    <footer className='mt-20'>
+    <footer>
       <Link to='/'><h1 className='-mb-4'>M.D. Golden</h1></Link>
       <hr className='w-3/5 h-1 rounded bg-white border-solid border-2 inline-block justify-self-center'/>
-      <div className='flex justify-center'>
+      <div className='flex flex-col sm:flex-row justify-evenly'>
         {footLinks.map((link) => (
-          <NavLink className='m-0 px-10 font-atomic text-2xl' key={link.title} to={link.url}>{link.title}</NavLink>
+          <NavLink className='m-0 font-atomic text-2xl' key={link.title} to={link.url}>{link.title}</NavLink>
         ))}
       </div>
-      <div className='flex justify-center'>
+      <div className='flex flex-col sm:flex-row justify-center'>
         {footLinks2.map((link) => (
           <NavLink className='m-0 px-4 underline text-sm' key={link.title} to={link.url}>{link.title}</NavLink>
         ))}

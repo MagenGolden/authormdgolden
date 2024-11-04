@@ -21,7 +21,7 @@ const Store = () => {
     <div>
       <Navbar />
       <Header image={StoreImg} title={'M.D. Golden'} sub={'ESCAPE INTO THE WORLD OF TOMORROW'} box=<FaCircleArrowDown className='mt-6 transition-transform hover:scale-110' size={40} style={{fill: '#ffa500'}} onClick={()=> location.href='#store'} /> />
-        <StoreBook storeImg={StoreBk1} storeTitle='THE REMEMBERERS' storeSub='Book 1 of 4' storeText={<p className='text-left text-sm'>When every man over the age of 18 is taken away, never to be seen again, Matt goes on a search to find his father.
+        <StoreBook margin='mt-52' storeImg={StoreBk1} storeTitle='THE REMEMBERERS' storeSub='Book 1 of 4' storeText={<p className='text-left text-sm'>When every man over the age of 18 is taken away, never to be seen again, Matt goes on a search to find his father.
           <br /><br />
                                                                                                                     An alien race lands on Earth looking for a haven to make their home. In exchange for information that could save the human race from extinction, they are given a place to live among the current inhabitants of the planet. They also agree to help the human race fight against any other enemy that might wish to do them harm.
           <br /><br />
