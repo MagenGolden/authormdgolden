@@ -7,7 +7,7 @@ const HomeAuthor = () => {
   return (
     <section>
       <h1>MEET THE AUTHOR</h1>
-      <div className='w-full bg-gray-800 flex flex-wrap items-center'>
+      <div className='w-full py-10 bg-gray-800 flex flex-wrap items-center'>
         <div className='w-[525px] flex-row'>
           <h2 className='text-orange text-5xl'>M.D. GOLDEN</h2>
           <p className='mt-5 px-2 leading-loose'>I write stories about people overcoming the odds stacked against them to provide courage to those who need strength to carry on. I was once a young kid who used to read alone in my room to escape the cold world. Now I provide worlds for kids to escape to. </p>
