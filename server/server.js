@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 4001;
+const port = process.env.PORT || 8888;
 const signUp = require('./signUp');
 const contactSend = require('./contact');
 const cors = require('cors');
 const corsOptions = {
-  origin: 'http://authormdgolden.com'
+  origin: 'https://authormdgolden.com'
 };
 
 
