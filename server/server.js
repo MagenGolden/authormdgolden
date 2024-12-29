@@ -1,11 +1,14 @@
 const express = require('express');
 const app = express();
+const https = require('https');
+const path = require('path');
+const fs = require('fs');
 const port = process.env.PORT || 8888;
 const signUp = require('./signUp');
 const contactSend = require('./contact');
 const cors = require('cors');
 const corsOptions = {
-  origin: 'https://authormdgolden.com'
+  origin: 'https://www.authormdgolden.com'
 };
 
 
@@ -20,7 +23,12 @@ app.get('/', (req, res) => {
 app.post('/signup', signUp);
 app.post('/contact', contactSend);
 
-app.listen(port, (res, err) => {
+const sslServer = https.createServer({
+  key: fs.readFileSync(path.join(__dirname, 'key.pem')),
+  cert: fs.readFileSync(path.join(__dirname, 'cert.pem')),
+}, app)
+
+sslServer.listen(port, (res, err) => {
   if (err) {
     console.log('Server failed');
   } else {
