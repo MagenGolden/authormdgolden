@@ -1,5 +1,5 @@
 import axios from 'axios';
 
 export default axios.create({
-  baseURL: 'http://api.authormdgolden.com',
+  baseURL: 'http://authormdgolden.com:8888',
 });
