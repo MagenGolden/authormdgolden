@@ -1,2 +1,2 @@
-exports.user = 'magengolden92@gmail.com';
-exports.pass = 'vsaq rbuv qegp exot';
+exports.user = 'mdgolden@authormdgolden.com';
+exports.pass = '%14fTE5!#nR@GN5ZvUet';

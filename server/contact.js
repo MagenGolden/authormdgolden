@@ -1,10 +1,15 @@
 const nodemailer = require('nodemailer');
 const { user, pass } = require('./authLogin');
+const logEvents = require('./logEvents');
+const EventEmitter = require('events');
 
+class MyEmitter extends EventEmitter {};
+const myEmitter = new MyEmitter();
+
+myEmitter.on('log', (msg, fileName) => logEvents(msg, fileName));
 
 const transport = nodemailer.createTransport ({
-  service: 'Gmail',
-  host: 'smtp.gmail.com',
+  host: 'smtp.dreamhost.com',
   port: 465,
   secure: true,
   auth: {
@@ -16,15 +21,15 @@ const transport = nodemailer.createTransport ({
 const contactSend = (req, res) => {
 
     const mailOptions = {
-      from: 'magengolden92@gmail.com',
-      to: 'magengolden92@gmail.com',
+      from: 'mdgolden@authormdgolden.com',
+      to: 'mdgolden@authormdgolden.com',
       subject: 'Contact Form',
       text: `From: ${req.body.email}\nName: ${req.body.name}\nMessage:${req.body.message}`,
     };
 
   transport.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.log(error);
+      myEmitter.emit('log', `${error.name}: ${error.message}`, 'error.txt');
       res.send(error);
     } else {
       console.log('Email sent');

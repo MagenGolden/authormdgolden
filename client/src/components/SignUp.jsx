@@ -15,11 +15,12 @@ const [email, setEmail] = useState ('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const requiredInputs = document.querySelectorAll('[required]');
-    let requiredFields = Array.from(requiredInputs);
+    const requiredFields = [
+      {id:'name', value: `${name}`},
+      {id:'email', value: `${email}`}
+    ];
     const emptyFields = requiredFields.filter(item =>
-      (!item.value && item.required)
-    );
+      (!item.value));
     const userInfo = {name, email};
     if ((emptyFields.length === 0) && (!b0Spm)){
     try {

@@ -9,6 +9,7 @@ import Policy from './routes/Policy';
 import Rememberers from './routes/Rememberers';
 import Store from './routes/Store';
 import Terms from './routes/Terms';
+import Error from './routes/Error';
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
   { path: "/the-rememberers", element: <Rememberers />, },
   { path: "/store", element: <Store />, },
   { path: "/terms-and-conditions", element: <Terms />, },
+  { path: "*", element: <Error />, },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
