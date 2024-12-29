@@ -10,6 +10,9 @@ import Rememberers from './routes/Rememberers';
 import Store from './routes/Store';
 import Terms from './routes/Terms';
 import Error from './routes/Error';
+import { disableReactDevTools } from '@fvilers/disable-react-devtools';
+
+if (process.env.NODE_ENV === 'production') disableReactDevTools();
 
 
 const router = createBrowserRouter([
