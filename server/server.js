@@ -23,10 +23,10 @@ app.get('/', (req, res) => {
 app.post('/signup', signUp);
 app.post('/contact', contactSend);
 
-const sslServer = https.createServer({
-  key: fs.readFileSync(path.join(__dirname, 'key.pem')),
-  cert: fs.readFileSync(path.join(__dirname, 'cert.pem')),
-}, app)
+//const sslServer = https.createServer({
+//  key: fs.readFileSync(path.join(__dirname, 'key.pem')),
+//  cert: fs.readFileSync(path.join(__dirname, 'cert.pem')),
+//}, app)
 
 sslServer.listen(port, (res, err) => {
   if (err) {
