@@ -1,5 +1,4 @@
 const nodemailer = require('nodemailer');
-const { user, pass } = require('./authLogin');
 
 const logEvents = require('./logEvents');
 const EventEmitter = require('events');
@@ -14,8 +13,8 @@ const transport = nodemailer.createTransport ({
   port: 465,
   secure: true,
   auth: {
-    user: user,
-    pass: pass,
+    user: process.env.USER,
+    pass: process.env.PASS,
   }
 });
 
